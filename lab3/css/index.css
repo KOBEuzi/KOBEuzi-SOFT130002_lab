@@ -1,0 +1,67 @@
+nav{
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 40px;
+}
+nav h3 a{
+    padding-left: 30px;
+    text-decoration: none;
+    color: rgb(198, 198, 209);
+}
+nav h3 a:hover{
+    color: blue;
+}
+.message_a{
+font-size: 22px;
+color: #0000ff;
+text-decoration: none;
+}
+span{
+    float: right;
+    padding-right: 30px;
+}
+aside{
+    float: right;
+    padding-right: 50px;
+}
+aside ul a{
+    text-decoration: none;
+}
+aside ul a li:hover{
+    color: red  ;
+}
+aside ul a li{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+section{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(243, 237, 239);
+
+}
+h1{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+li{
+    list-style-type: none;
+}
+blockquote{
+  color: #0000ff;
+  background-color: #00ff00;
+    width: 300px;
+}
+#article{
+    width: 1200px;
+
+    background-color: rgb(220, 238, 238);
+}
+#article li{
+    border-bottom: dashed;
+    padding-right: 20px;
+}
