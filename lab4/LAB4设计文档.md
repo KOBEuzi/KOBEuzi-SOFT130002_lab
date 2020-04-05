@@ -18,4 +18,4 @@
 
 ## 主页效果图如下
 
-![](.\images\sample.JPG)
+![](KOBEuzi-SOFT130002_lab/lab4/images/sample.JPG)
