@@ -18,4 +18,4 @@
 
 ## 主页效果图如下
 
-![](KOBEuzi-SOFT130002_lab/lab4/images/sample.JPG)
+![](https://github.com/KOBEuzi/KOBEuzi-SOFT130002_lab/blob/master/lab4/images/sample.JPG)
