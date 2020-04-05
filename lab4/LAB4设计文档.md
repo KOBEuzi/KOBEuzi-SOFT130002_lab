@@ -18,4 +18,4 @@
 
 ## 主页效果图如下
 
-![](E:\大三学期第二学期课程\web开发\lab4\images\sample.JPG)
+![](\images\sample.JPG)
