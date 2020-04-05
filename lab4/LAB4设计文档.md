@@ -18,4 +18,4 @@
 
 ## 主页效果图如下
 
-![](\images\sample.JPG)
+![](.\images\sample.JPG)
