@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail</title>
+
+    <link rel="stylesheet" href="../css/browser.css" type="text/css">
+
+    <script language="JavaScript" type="text/javascript">
+        var city=[
+            ["Shanghai", "Suzhou", "Beijing", "Hangzhou"],
+            ["Tokyo", "Osaka", "Kamakura"],
+            ["Florence","Roma", "Milan", "Venice"],
+            ["New York", "Los Angeles", "Washington"]
+        ];
+
+        function getCity(){
+            //获得省份下拉框的对象
+            var sltCountry=document.form1.country;
+            //获得城市下拉框的对象
+            var sltCity=document.form1.city;
+            //得到对应省份的城市数组
+            var countryCity=city[sltCountry.selectedIndex - 1];
+            //清空城市下拉框，仅留提示选项
+            sltCity.length=1;
+            //将城市数组中的值填充到城市下拉框中
+            for(var i=0;i<countryCity.length;i++){
+                sltCity[i+1]=new Option(countryCity[i],countryCity[i]);
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<div id="nav">
+    <ul id="menu">
+        <li><img src="../../images/icon/login.png" id="icon"></li>
+        <li class="horizontal"><a href="home.html">Home</a></li>
+        <li class="horizontal"><a href="browser.html">Browser</a></li>
+        <li class="horizontal"><a href="search.html">Search</a></li>
+        <li id="floatright" class="horizontal"><a> My account ▼ </a>
+            <ul>
+                <li><a href="upload.html"><img src="../../images/icon/upload.png">upload</a></li>
+                <li><a href="my_photo.html"><img src="../../images/icon/mine.png">my photo</a></li>
+                <li><a href="favor.html"><img src="../../images/icon/my favor.png">my favor</a></li>
+                <li><a href="../../index.html"><img src="../../images/icon/login_2.png">login</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div id="wrapper">
+    <aside>
+        <form name="title_browser" method="post">
+            <header>Search by title</header>
+            <hr class="style-two">
+            <input type="search" placeholder="type title here">
+            <div onclick="alert('searched')"><input type="button" value="search"></div>
+        </form>
+
+
+        <div onclick="alert('searched')">
+            <header>hot content</header>
+            <hr class="style-two">
+            <ul style="list-style-type: none">
+                <li><a>Scenery</a></li>
+                <hr class="style-two">
+                <li><a>City</a></li>
+                <hr class="style-two">
+                <li><a>People</a></li>
+                <hr class="style-two">
+                <li><a>Animal</a></li>
+                <hr class="style-two">
+                <li><a>Building</a></li>
+                <hr class="style-two">
+                <li><a>Wonder</a></li>
+            </ul>
+
+        </div>
+        <div onclick="alert('searched')">
+            <header>hot countries</header>
+            <hr class="style-two">
+            <ul style="list-style-type: none">
+                <li><a>China</a></li>
+                <hr class="style-two">
+                <li><a>America</a></li>
+                <hr class="style-two">
+                <li><a>Italy</a></li>
+                <hr class="style-two">
+                <li><a>Japan</a></li>
+            </ul>
+        </div>
+
+
+
+
+    </aside>
+
+    <div id="main">
+      <h2>Filter</h2>
+      <hr class="style-one">
+        <form id = "form_part" method="post" action="" name="form1">
+            <select name="content">
+                <option>Filter by Content</option>
+                <option>Landscape</option>
+                <option>Building</option>
+                <option>Humanities</option>
+            </select>
+            <select name="country" onchange="getCity()">
+                <option VALUE="0">Filter by Country</option>
+                <option VALUE="1">China </option>
+                <option VALUE="2">Japan </option>
+                <option VALUE="3">Italy </option>
+                <option VALUE="4">America </option>
+            </select>
+            <select name="city">
+                <option value="0">Filter by City</option>
+            </select>
+            <input type="submit" value="Filter" onclick="alert('searched')">
+        </form>
+
+        <div id="showcase">
+
+            <table>
+                <tr>
+                    <th><a href="details.html"><img src="../../images/content/Browser/1.jpg"></a></th>
+                    <th><a href="details.html" ><img src="../../images/content/Browser/2.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/3.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/4.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/5.jpg"></a></th>
+                </tr>
+                <tr>
+                    <th><a href="details.html"><img src="../../images/content/Browser/6.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/7.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/8.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/9.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/10.jpg"></a></th>
+                </tr>
+                <tr>
+                    <th><a href="details.html"><img src="../../images/content/Browser/11.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/12.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/13.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/14.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/15.jpg"></a></th>
+                </tr>
+                <tr>
+                    <th><a href="details.html"><img src="../../images/content/Browser/16.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/17.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/18.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/19.jpg"></a></th>
+                    <th><a href="details.html"><img src="../../images/content/Browser/20.jpg"></a></th>
+                </tr>
+            </table>
+
+        </div>
+        <div id="footer">
+          <span class="page_jump" onclick="alert('to homepage')"> << </span>
+          <span class="page_jump" onclick="alert('to page1')">1</span>
+          <span class="page_jump" onclick="alert('to page2')">2</span>
+          <span class="page_jump" onclick="alert('to page3')">3</span>
+          <span class="page_jump" onclick="alert('to page4')">4</span>
+          <span class="page_jump" onclick="alert('to page5')">5</span>
+          <span class="page_jump" onclick="alert('to the last page')"> >> </span>
+        </div>
+    </div>
+</div>
+
+<footer>Copyright 17307100018</footer>
+</body>
+</html>

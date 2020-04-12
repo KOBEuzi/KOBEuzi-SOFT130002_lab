@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>upload</title>
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/upload.css" type="text/css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        function changepic() {
+            $("#prompt").css("display", "none");
+            var reads = new FileReader();
+            f = document.getElementById('file').files[0];
+            reads.readAsDataURL(f);
+            reads.onload = function (e) {
+                document.getElementById('img').src = this.result;
+                $("#img").css("display", "block");
+            };
+        }
+    </script>
+
+
+</head>
+<body>
+
+<div id="nav">
+    <ul id="menu">
+        <li><img src="../../images/icon/login.png" id="icon"></li>
+        <li class="horizontal"><a href="home.html">Home</a></li>
+        <li class="horizontal"><a href="browser.html">Browser</a></li>
+        <li class="horizontal"><a href="search.html">Search</a></li>
+        <li id="floatright" class="horizontal"><a> My account ▼ </a>
+            <ul>
+                <li><a href="upload.html"><img src="../../images/icon/upload.png">upload</a></li>
+                <li><a href="my_photo.html"><img src="../../images/icon/mine.png">my photo</a></li>
+                <li><a href="favor.html"><img src="../../images/icon/my favor.png">my favor</a></li>
+                <li><a href="../../index.html"><img src="../../images/icon/login_2.png">login</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div id="main">
+  <h2>Upload</h2>
+  <div class="link-top_1"></div>
+    <form name="upload" method="post" action="my_photo.html">
+
+        <div id="imgPreview">
+
+            <div id="prompt">
+                <div id="hidden">No picture uploaded.</div>
+                <div id="up"><input type="file" id="file" class="filepath" onchange="changepic(this)" onclick="hidden.style.visibility='hidden'" accept="image/jpg,image/jpeg,image/png,image/PNG"></div>
+                <div id="down"><input type="submit" value="Upload"></div>
+            </div>
+        </div>
+        <br>
+        <div id="typein">
+            Title：<div><input type="text" id="input_1"></div>
+            Description：<div><input type="text" id="input_description"></div>
+            Country：<div><input type="text" id="input_1"></div>
+            City：<div><input type="text" id="input_1"></div>
+            <div><input type="submit" value="Submit" onclick="alert('submitted')"></div>
+        </div>
+    </form>
+
+</div>
+
+<footer>Copyright 17307100018</footer>
+</body>
+</html>

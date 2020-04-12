@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+
+    <link rel="stylesheet" href="../css/search.css" type="text/css">
+</head>
+
+<body>
+<div id="nav">
+    <ul id="menu">
+        <li><img src="../../images/icon/login.png" id="icon"></li>
+        <li class="horizontal"><a href="home.html">Home</a></li>
+        <li class="horizontal "><a href="browser.html">Browser</a></li>
+        <li class="horizontal"><a href="search.html">Search</a></li>
+        <li id="floatright" class="horizontal"><a> My account ▼ </a>
+            <ul>
+                <li><a href="upload.html"><img src="../../images/icon/upload.png">upload</a></li>
+                <li><a href="my_photo.html"><img src="../../images/icon/mine.png">my photo</a></li>
+                <li><a href="favor.html"><img src="../../images/icon/my favor.png">my favor</a></li>
+                <li><a href="../../index.html"><img src="../../images/icon/login_2.png">login</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div id="filter">
+  <h2>Search</h2>
+  <hr class="style-one">
+    <form>
+        <input type="radio" name="searchstandard" value="title" checked>Title<br>
+        <input type="text" id = "title_text"><br><br>
+        <input type="radio" name="searchstandard" value="description">Description<br>
+        <input type="text" id = "description_text"><br><br>
+        <span class="submit_button" onclick="alert('submitted')"><input type="submit" value="Filter"></span>
+    </form>
+</div>
+
+<div id="result">
+    <h2>Result</h2>
+    <hr class="style-one">
+    <div>
+        <a href="details.html"><img src="../../images/content/my_photo/1.jpg"></a>
+        <div>
+            <header>Title</header>
+            <p class="limit_length">Welcome to this travelling world. This photo mixes all kinds of elements of my travelling experience.
+                                   Fabulous lakes, blue sky, buildings with trees, really makes every visitor comfortable.</p>
+        </div>
+    </div>
+    <div>
+        <a href="details.html"><img src="../../images/content/my_photo/1.jpg"></a>
+        <div>
+            <header>Title</header>
+            <p class="limit_length">Welcome to this travelling world. This photo mixes all kinds of elements of my travelling experience.
+                                   Fabulous lakes, blue sky, buildings with trees, really makes every visitor comfortable. </p>
+        </div>
+    </div>
+    <div>
+        <a href="details.html"><img src="../../images/content/my_photo/1.jpg"></a>
+        <div>
+            <header>Title</header>
+            <p class="limit_length">Welcome to this travelling world. This photo mixes all kinds of elements of my travelling experience.
+                                   Fabulous lakes, blue sky, buildings with trees, really makes every visitor comfortable.</p>
+        </div>
+    </div>
+    <div>
+        <a href="details.html"><img src="../../images/content/my_photo/1.jpg"></a>
+        <div>
+            <header>Title</header>
+            <p class="limit_length">Welcome to this travelling world. This photo mixes all kinds of elements of my travelling experience.
+                                   Fabulous lakes, blue sky, buildings with trees, really makes every visitor comfortable. </p>
+        </div>
+    </div>
+    <div>
+        <a href="details.html"><img src="../../images/content/my_photo/1.jpg"></a>
+        <div>
+            <header>Title</header>
+            <p class="limit_length">Welcome to this travelling world. This photo mixes all kinds of elements of my travelling experience.
+                                   Fabulous lakes, blue sky, buildings with trees, really makes every visitor comfortable. </p>
+        </div>
+    </div>
+
+    <footer id="footer">
+      <span class="page_jump" onclick="alert('to homepage')"> << </span>
+      <span class="page_jump" onclick="alert('to page1')">1</span>
+      <span class="page_jump" onclick="alert('to page2')">2</span>
+      <span class="page_jump" onclick="alert('to page3')">3</span>
+      <span class="page_jump" onclick="alert('to page4')">4</span>
+      <span class="page_jump" onclick="alert('to page5')">5</span>
+      <span class="page_jump" onclick="alert('to the last page')"> >> </span>
+    </footer>
+</div>
+
+<footer id="footerall">Copyright 17307100018</footer>
+</body>
+</html>
