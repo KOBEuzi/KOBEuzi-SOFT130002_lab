@@ -2,7 +2,7 @@
 
 17307100018  俞铖昊
 
-![](https://github.com/KOBEuzi/KOBEuzi-SOFT130002_lab/blob/master/lab5/images/网页截图.JPG)
+![网页截图](https://github.com/KOBEuzi/KOBEuzi-SOFT130002_lab/blob/master/lab5/images/网页截图.JPG)
 
 ## 知识点和解决方法
 
