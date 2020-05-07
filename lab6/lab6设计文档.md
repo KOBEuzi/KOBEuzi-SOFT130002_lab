@@ -22,4 +22,4 @@ set和array相似，不过set不允许重复元素出现。
 
 map键值对储存，相比于array，map相当于键的本身不仅仅是数字下标。
 
-![](E:\lab\lab6\images\lab6本地命令行截图.JPG)
+![本地截图](https://github.com/KOBEuzi/KOBEuzi-SOFT130002_lab/blob/master/lab6/images/lab6%E6%9C%AC%E5%9C%B0%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%88%AA%E5%9B%BE.JPG)
